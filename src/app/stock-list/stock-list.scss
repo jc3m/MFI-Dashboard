@@ -1,0 +1,21 @@
+.stock-list {
+  box-sizing: border-box;
+  padding: 21px;
+  width: 100%;
+
+  input {
+    background-color: #4F4F4F;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    padding: 6px 10px;
+    width: 100%;
+    transition: border-color 0.2s;
+
+    &:focus {
+      outline: none;
+      border: 1px solid #666;
+      box-shadow: 0 0 6px #2A2A2A;
+    }
+  }
+}

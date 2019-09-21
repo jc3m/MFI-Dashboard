@@ -1,0 +1,9 @@
+.app {
+  min-height: 100vh;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding-top: 50px;
+  }
+}
