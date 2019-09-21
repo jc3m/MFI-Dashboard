@@ -1,0 +1,29 @@
+.card {
+  display: grid;
+  grid-template: 34px 1fr / 1fr 1fr;
+  padding: 18px 14px;
+
+  h3 {
+    font-size: 30px;
+    &:nth-child(2) {
+      font-weight: 300;
+      text-align: right;
+    }
+  }
+
+  p {
+    font-size: 12px;
+    &.date { color: #BDBDBD; }
+    &.change {
+      text-align: right;
+    }
+  }
+
+  .color {
+    color: #6FCF97;
+  }
+
+  .loss .color {
+    color: #EB5757;
+  }
+}

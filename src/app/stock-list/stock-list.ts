@@ -2,6 +2,8 @@ import { Component, OnInit, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
+import { StockCardModule } from './stock-card/stock-card';
+
 @Component({
   selector: 'app-stock-list',
   templateUrl: './stock-list.html',
@@ -9,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class StockListComponent implements OnInit {
   searchText: string = '';
+  stocks: string[] = ['ABBV', 'GTX'];
 
   constructor() { }
 
@@ -21,6 +24,7 @@ export class StockListComponent implements OnInit {
   imports: [
     CommonModule,
     FormsModule,
+    StockCardModule,
   ],
   exports: [StockListComponent],
 })
